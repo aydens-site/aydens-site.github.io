@@ -16,20 +16,6 @@
       background-size: cover;
       color: #fff;
     }
-    h1 {
-      margin-top: 50px;
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 48px;
-      text-shadow: 2px 2px 4px #000;
-    }
-    h2 {
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 18px;
-      font-weight: lighter;
-      text-transform: lowercase;
-      text-shadow: 2px 2px 4px #000;
-      margin-top: 5px;
-    }
     nav {
       display: flex;
       justify-content: center;
@@ -49,16 +35,38 @@
     nav a:hover {
       text-decoration: underline;
     }
-    support-text {
-      margin-top: auto;
-      margin-bottom: 20px;
+    h1 {
+      margin-top: 50px;
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 48px;
+      text-shadow: 2px 2px 4px #000;
+    }
+    h2 {
       font-family: 'Comic Sans MS', cursive;
       font-size: 18px;
+      font-weight: lighter;
+      text-transform: lowercase;
       text-shadow: 2px 2px 4px #000;
+      margin-top: 5px;
+    }
+    button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    button {
+      transition: transform 0.3s ease-in-out;
+      border: 2px solid #000;
+      border-radius: 10px;
+      background-color: #FFFF00;
+      color: #000;
+      padding: 10px 20px;
       cursor: pointer;
     }
-    support-text:hover {
-      text-decoration: underline;
+    button:hover {
+      transform: scale(1.1);
     }
     footer {
       text-align: center;
@@ -75,24 +83,27 @@
 <body>
 
   <nav>
-    <a href="pizzatower">Pizza Tower</a>
-    <a href="tombofthemask">Tomb of the Mask</a>
-    <a href="1v1lol">1v1.lol</a>
-    <a href="ovo">OvO</a>
-    <a href="pixelshooter">Pixel Shooter</a>
-    <a href="basketrandom">Basket Random</a>
-    <a href="slope">Slope</a>
-    <a href="basketballstars">Basketball Stars</a>
-    <a href="fnaf">Five Nights at Freddy's</a>
-    <a href="motox3m">Moto X3M</a>
-    <a href="fireboyandwatergirl">Fireboy and Watergirl</a>
-    <a href="run3">Run 3</a>
+    <a href="support">Support</a>
+    <a href="contact">Contact</a>
   </nav>
 
   <h1>Ayden's Site</h1>
   <h2>a fun website by Ayden</h2>
 
-  <support-text onclick="window.location.href='https://www.buymeacoffee.com/aydenvergara'">Want to support me? ☕ Buy me a coffee!</support-text>
+  <button-container>
+    <button onclick="window.location.href='pizzatower'">Pizza Tower</button>
+    <button onclick="window.location.href='tombofthemask'">Tomb of the Mask</button>
+    <button onclick="window.location.href='1v1lol'">1v1.lol</button>
+    <button onclick="window.location.href='ovo'">OvO</button>
+    <button onclick="window.location.href='pixelshooter'">Pixel Shooter</button>
+    <button onclick="window.location.href='basketrandom'">Basket Random</button>
+    <button onclick="window.location.href='slope'">Slope</button>
+    <button onclick="window.location.href='basketballstars'">Basketball Stars</button>
+    <button onclick="window.location.href='fnaf'">Five Nights at Freddy's</button>
+    <button onclick="window.location.href='motox3m'">Moto X3M</button>
+    <button onclick="window.location.href='fireboyandwatergirl'">Fireboy and Watergirl</button>
+    <button onclick="window.location.href='run3'">Run 3</button>
+  </button-container>
 
   <footer>Website is a work in progress. Bugs may occur, and more games will be added soon.</footer>
 
