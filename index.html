@@ -1,177 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4c4.png" type="image/png">
-  <title>Ayden's Site</title>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background: url("https://mcdn.wallpapersafari.com/medium/10/37/Aim58J.jpg") no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: rgba(0, 0, 0, 0.7);
-      width: 100%;
-      padding: 10px 20px;
-      box-sizing: border-box;
-    }
-    nav .logo-container {
-      display: flex;
-      align-items: center;
-    }
-    nav img {
-      width: 30px; /* Adjust the width as needed */
-      height: auto;
-      margin-right: 10px; /* Add margin for spacing */
-    }
-    nav .logo-text {
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 18px;
-      text-shadow: 2px 2px 4px #000;
-      color: #fff;
-    }
-    nav a {
-      text-decoration: none;
-      color: #fff;
-      margin: 0 20px;
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 18px;
-      text-shadow: 2px 2px 4px #000;
-    }
-    nav a:hover {
-      text-decoration: underline;
-      background-color: #7FFFD4;
-    }
-    h1, h2 {
-      margin-top: 50px;
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 48px;
-      text-shadow: 2px 2px 4px #000;
-      transition: transform 0.3s ease-in-out;
-    }
-    h2 {
-      font-size: 18px;
-      font-weight: lighter;
-      text-transform: lowercase;
-      margin-top: 5px;
-    }
-    h1:hover, h2:hover {
-      transform: scale(1.1);
-    }
-    button-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 20px;
-    }
-    button {
-      transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-      border: 2px solid #000;
-      border-radius: 10px;
-      background-color: #FFFF00;
-      color: #000;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-    button:hover {
-      transform: scale(1.1);
-      background-color: #7FFFD4;
-    }
-    footer {
-      margin-top: auto;
-      text-align: center;
-      padding: 10px;
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 18px;
-      text-shadow: 2px 2px 4px #000;
-      background-color: rgba(0, 0, 0, 0.7);
-      width: 100%;
-      box-sizing: border-box;
-    }
+	
+	<meta charset="utf-8">
+	
+	<title>Run 3</title>
+	
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
 
-    /* Loading overlay styles */
-    #loading-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: #000; /* Black background color */
-      opacity: 1;
-      animation: fadeOut 2s forwards;
-    }
+	
+	
+	<script type="text/javascript" src="./Run3.js"></script>
+	
+	<script>
+		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
+		if (typeof window.devicePixelRatio !='undefined' && window.devicePixelRatio > 2) {
+			var meta = document.getElementById ("viewport");
+			meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
+		}
+	</script>
+	
+	<style>
+		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+		#openfl-content { background: #000000; width: 100%; height: 100%; }
+		@font-face {
+			font-family: 'Comfortaa Bold';
+			src: url('font/COMFORTAA-BOLD.eot?#iefix') format('embedded-opentype'),
+			url('font/COMFORTAA-BOLD.woff') format('woff'),
+			url('font/COMFORTAA-BOLD.TTF') format('truetype'),
+			url('font/COMFORTAA-BOLD.svg#Comfortaa%20Bold') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Comfortaa';
+			src: url('font/Comfortaa.eot?#iefix') format('embedded-opentype'),
+			url('font/Comfortaa.woff') format('woff'),
+			url('font/Comfortaa.otf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Permanent Marker';
+			src: url('font/PERMANENTMARKER.eot?#iefix') format('embedded-opentype'),
+			url('font/PERMANENTMARKER.woff') format('woff'),
+			url('font/PERMANENTMARKER.TTF') format('truetype'),
+			url('font/PERMANENTMARKER.svg#Permanent%20Marker') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
 
-    @keyframes fadeOut {
-      to {
-        opacity: 0;
-      }
-    }
-  </style>
+	</style>
+	
 </head>
 <body>
-
-  <div id="loading-overlay"></div>
-
-  <script>
-    // Remove the loading overlay after it fades out
-    function removeLoadingOverlay() {
-      document.getElementById('loading-overlay').style.display = 'none';
-    }
-
-    // Show the loading overlay
-    document.addEventListener('DOMContentLoaded', function () {
-      document.getElementById('loading-overlay').style.display = 'flex';
-
-      // Hide the loading overlay and remove it after 2 seconds
-      setTimeout(removeLoadingOverlay, 2000);
-    });
-  </script>
-
-  <nav>
-    <div class="logo-container">
-      <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4c4.png" alt="Logo">
-      <div class="logo-text">Ayden's Site</div>
-    </div>
-    <div>
-      <a href="https://aydens-site.github.io">Home</a>
-      <a href="support">Support</a>
-      <a href="contact">Contact</a>
-    </div>
-  </nav>
-
-  <h1>Welcome!</h1>
-  <h2>this is a fun website by Ayden</h2>
-
-  <button-container>
-   <button onclick="window.location.href='pizzatower'">Pizza Tower</button>
-   <button onclick="window.location.href='tombofthemask'">Tomb of the Mask</button>
-   <button onclick="window.location.href='1v1lol'">1v1.lol</button>
-   <button onclick="window.location.href='ovo'">OvO</button>
-   <button onclick="window.location.href='pixelshooter'">Pixel Shooter</button>
-   <button onclick="window.location.href='basketrandom'">Basket Random</button>
-   <button onclick="window.location.href='slope'">Slope</button>
-   <button onclick="window.location.href='basketballstars'">Basketball Stars</button>
-   <button onclick="window.location.href='fnaf'">Five Nights at Freddy's</button>
-   <button onclick="window.location.href='motox3m'">Moto X3M</button>
-   <button onclick="window.location.href='fireboyandwatergirl'">Fireboy and Watergirl</button>
-   <button onclick="window.location.href='run3'">Run 3</button>
-   <button onclick="window.location.href='retrobowl'">Retro Bowl</button>
-   <button onclick="window.location.href='streetfighter'">Street Fighter</button>
-   <button onclick="window.location.href='logan'">Logan's Rizz 😍💀</button>
-  </button-container>
-
-  <footer>Website is a work in progress. Bugs may occur, and more games will be added soon.</footer>
-
+	
+	<noscript>This webpage makes extensive use of JavaScript. Please enable JavaScript in your web browser to view this page.</noscript>
+	
+	<div id="openfl-content"></div>
+	
+	<script type="text/javascript">
+		lime.embed ("Run3", "openfl-content", 800, 600, { parameters: {} });
+	</script>
+	<script src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/addc4348-16c2-4645-9dff-f99b962e39ef%2Fscr.js"></script>
 </body>
 </html>
