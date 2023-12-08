@@ -1,71 +1,51 @@
-<html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logan's Rizz</title>
-  <link rel="icon" href="https://emojiisland.com/cdn/shop/products/Heart_Eyes_Emoji_grande.png?v=1571606037" type="image/png">
-  <style>
-    body {
-      background-color: black;
-      margin: 0;
-      overflow: hidden;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan's Rizz</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-    #center-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-family: 'Arial', sans-serif;
-      font-size: 28px;
-      cursor: pointer;
-      text-align: center;
-      transition: opacity 0.3s ease-out;
-    }
+        video {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+        }
 
-    #bottom-text {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      color: red;
-      font-family: 'Courier New', monospace;
-      font-size: 18px;
-      text-align: center;
-      width: 100%;
-    }
-  </style>
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: red;
+        }
+    </style>
 </head>
 <body>
-  <div id="center-text" onclick="showGifAndAudio()" style="opacity: 1;">Click me to see rizz</div>
-  <div id="bottom-text">made by ayden</div>
+    <video controls>
+        <source src="https://raw.githubusercontent.com/aydens-site/bah/main/lv_0_20231111002725.mp4" type="video/mp4">
+    </video>
 
-  <script>
-    function showGifAndAudio() {
-      var centerText = document.getElementById("center-text");
-      centerText.style.opacity = "0";
+    <video controls>
+        <source src="https://raw.githubusercontent.com/aydens-site/bah/main/lv_0_20231111004244.mp4" type="video/mp4">
+    </video>
 
-      var gif = document.createElement("img");
-      gif.src = "https://raw.githubusercontent.com/iDarkGaming/bah/main/ezgif-3-5aaa63c4fb.gif";
-      gif.style.width = "50%";
-      gif.style.height = "auto";
-      gif.style.position = "fixed";
-      gif.style.top = "50%";
-      gif.style.left = "50%";
-      gif.style.transform = "translate(-50%, -50%)";
-      gif.style.zIndex = "9999";
+    <video controls>
+        <source src="https://raw.githubusercontent.com/aydens-site/bah/main/lv_0_20231111153023.mp4" type="video/mp4">
+    </video>
 
-      var audio = new Audio("https://raw.githubusercontent.com/iDarkGaming/bah/main/lv_0_20231111153023.mp3");
-      audio.play();
+    <video controls>
+        <source src="https://raw.githubusercontent.com/aydens-site/bah/main/lv_7286561320952958213_20231111234339.mp4" type="video/mp4">
+    </video>
 
-      document.body.appendChild(gif);
-
-      audio.addEventListener("ended", function() {
-        document.body.removeChild(gif);
-        centerText.style.opacity = "1";
-      });
-    }
-  </script>
-
-
-</body></html>
+    <footer>Made by Ayden.</footer>
+</body>
+</html>
