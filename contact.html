@@ -25,9 +25,20 @@
       padding: 10px 20px;
       box-sizing: border-box;
     }
+    nav .logo-container {
+      display: flex;
+      align-items: center;
+    }
     nav img {
       width: 30px; /* Adjust the width as needed */
       height: auto;
+      margin-right: 10px; /* Add margin for spacing */
+    }
+    nav .logo-text {
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 18px;
+      text-shadow: 2px 2px 4px #000;
+      color: #fff;
     }
     nav a {
       text-decoration: none;
@@ -107,7 +118,10 @@
 <body>
 
   <nav>
-    <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4c4.png" alt="Logo">
+    <div class="logo-container">
+      <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4c4.png" alt="Logo">
+      <div class="logo-text">Ayden's Site</div>
+    </div>
     <div>
       <a href="https://aydens-site.github.io">Home</a>
       <a href="support">Support</a>
