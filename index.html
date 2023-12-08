@@ -123,6 +123,21 @@
 
   <div id="loading-overlay"></div>
 
+  <script>
+    // Remove the loading overlay after it fades out
+    function removeLoadingOverlay() {
+      document.getElementById('loading-overlay').style.display = 'none';
+    }
+
+    // Show the loading overlay
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('loading-overlay').style.display = 'flex';
+
+      // Hide the loading overlay and remove it after 2 seconds
+      setTimeout(removeLoadingOverlay, 2000);
+    });
+  </script>
+
   <nav>
     <div class="logo-container">
       <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4c4.png" alt="Logo">
