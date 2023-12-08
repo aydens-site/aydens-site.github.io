@@ -141,11 +141,13 @@
   </div>
 
   <script>
-    // Wait for the page to load
-    window.addEventListener('load', function () {
+    // Show the loading overlay
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('loading-overlay').style.display = 'flex';
+
       // Hide the loading overlay after 2 seconds
       setTimeout(function () {
-        document.getElementById('loading-overlay').style.display = 'none';
+        document.getElementById('loading-overlay').style.opacity = 0;
       }, 2000);
     });
   </script>
