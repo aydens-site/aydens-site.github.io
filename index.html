@@ -107,15 +107,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background-color: #3498db; /* Blue background color */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #ff0; /* Yellow text color */
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 48px;
-      text-shadow: 2px 2px 4px #000;
+      background-color: #000; /* Black background color */
       opacity: 1;
       animation: fadeOut 2s forwards;
     }
@@ -125,32 +117,11 @@
         opacity: 0;
       }
     }
-
-    #loading-gif {
-      width: 200px; /* Adjust the width as needed */
-      height: auto;
-      margin-bottom: 20px; /* Add margin for spacing */
-    }
   </style>
 </head>
 <body>
 
-  <div id="loading-overlay">
-    <img id="loading-gif" src="https://raw.githubusercontent.com/aydens-site/bah/main/Spinner-1s-200px%20(1).gif" alt="Loading...">
-    Loading...
-  </div>
-
-  <script>
-    // Show the loading overlay
-    document.addEventListener('DOMContentLoaded', function () {
-      document.getElementById('loading-overlay').style.display = 'flex';
-
-      // Hide the loading overlay after 2 seconds
-      setTimeout(function () {
-        document.getElementById('loading-overlay').style.opacity = 0;
-      }, 2000);
-    });
-  </script>
+  <div id="loading-overlay"></div>
 
   <nav>
     <div class="logo-container">
