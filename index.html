@@ -99,21 +99,35 @@
       width: 100%;
       box-sizing: border-box;
     }
+
+    /* Loading overlay styles */
+    #loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #3498db; /* Blue background color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ff0; /* Yellow text color */
+      font-size: 24px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
 
-  <div id="loading-overlay">
-    <img src="https://raw.githubusercontent.com/aydens-site/bah/main/Spinner-1s-207px.gif" alt="Loading..." style="width: 100vw; height: 100vh; object-fit: cover;">
-  </div>
+  <div id="loading-overlay">Loading...</div>
 
   <script>
     // Wait for the page to load
     window.addEventListener('load', function () {
-      // Hide the loading overlay after 3 seconds
+      // Hide the loading overlay after 2 seconds
       setTimeout(function () {
         document.getElementById('loading-overlay').style.display = 'none';
-      }, 3000);
+      }, 2000);
     });
   </script>
 
@@ -132,7 +146,7 @@
   <h1>Welcome!</h1>
   <h2>this is a fun website by Ayden</h2>
 
- <button-container>
+  <button-container>
    <button onclick="window.location.href='pizzatower'">Pizza Tower</button>
    <button onclick="window.location.href='tombofthemask'">Tomb of the Mask</button>
    <button onclick="window.location.href='1v1lol'">1v1.lol</button>
