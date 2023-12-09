@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* Body and Background Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: url("https://i.postimg.cc/WpxM5sqs/abstract-gradient-neon-lights.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Bar Styles */
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #340e36;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Button Styles */
+button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Your_Cool_Font', sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #bd93f9;
+  box-shadow: 0 0 12px #ff78c6;
+}
+
+/* Button Container Layout Styles */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
