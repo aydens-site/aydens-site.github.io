@@ -101,6 +101,17 @@
       width: 100%;
       box-sizing: border-box;
     }
+    .resized-image {
+    width: 75%; /* Resize to 75% of the original size */
+    height: auto; /* Maintain aspect ratio */
+    filter: blur(8px); /* Apply blur effect */
+    border: solid 8px transparent; /* Set border to ensure blur doesn't get clipped */
+    }
+    .container {
+        display: inline-block; /* Allows the size of the container to fit the image */
+        background: url('https://i.postimg.cc/wvD3jYFd/welcome.png') center/cover; /* Background image */
+        padding: 8px; /* Size of the blur effect */
+    }
   </style>
 </head>
 <body>
@@ -146,7 +157,9 @@
     </div>
   </nav>
 
-  <img src="https://i.postimg.cc/wvD3jYFd/welcome.png">
+    <div class="container">
+      <img src="https://i.postimg.cc/wvD3jYFd/welcome.png" class="resized-image">
+    </div>
   <h2>this is a fun website by Ayden</h2>
 
   <button-container>
