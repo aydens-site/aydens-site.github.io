@@ -101,14 +101,22 @@
       border: 2px solid #000;
       border-radius: 10px;
       background-color: #ff79c6;
-      color: #282a36; 
+      color: #282a36;
       padding: 10px 20px;
       cursor: pointer;
+      width: 100%;
     }
     button:hover {
       transform: scale(1.1);
       background-color: #bd93f9;
       box-shadow: 0 0 12px #ff78c6;
+    }
+    .button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
     }
     
     footer {
@@ -138,7 +146,7 @@
   <img src="https://i.postimg.cc/DZMQtMnG/welcome3.png">
   <h2>this is a fun website by Ayden</h2>
 
-  <button-container>
+  <div class="button-container">
    <button onclick="window.location.href='pizzatower'">Pizza Tower</button>
    <button onclick="window.location.href='tombofthemask'">Tomb of the Mask</button>
    <button onclick="window.location.href='1v1lol'">1v1.lol</button>
