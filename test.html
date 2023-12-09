@@ -104,7 +104,7 @@
       color: #282a36;
       padding: 10px 20px;
       cursor: pointer;
-      width: 100%;
+      width: 100%; /* Make buttons take up full width within the grid cell */
     }
     button:hover {
       transform: scale(1.1);
@@ -112,11 +112,11 @@
       box-shadow: 0 0 12px #ff78c6;
     }
     .button-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Four columns per row */
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
     }
     
     footer {
