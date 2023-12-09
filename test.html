@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4c4.png">
+  <link rel="icon" href="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4c4.png" type="image/png">
   <title>Ayden's Site</title>
   <style>
     body {
@@ -17,72 +17,52 @@
       color: #fff;
       font-family: 'Arial', sans-serif;
     }
-
     nav {
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: center;
       background-color: #340e36;
       width: 100%;
       padding: 10px 20px;
       box-sizing: border-box;
     }
-
-    .logo-container {
+    nav .logo-container {
       display: flex;
       align-items: center;
     }
-
-    .logo-container img {
-      width: 120px;
+    nav img {
+      width: 30px;
       height: auto;
       margin-right: 10px;
     }
-
-    .logo-text {
+    nav .logo-text {
       font-size: 18px;
       color: #f8f8f2;
     }
-
-    .nav-links {
-      display: flex;
-      margin-left: 20px;
-    }
-
-    .nav-links a {
+    nav a {
       text-decoration: none;
-      color: #0077b6;
-      margin-right: 20px:
-      font-weight: bold;
+      color: #f8f8f2;
       margin: 0 20px;
       font-size: 18px;
     }
-
-    .nav-links a:hover {
+    nav a:hover {
       text-decoration: underline;
       background-color: #bd93f9;
     }
-
-    .welcome-image {
-      background: url("https://i.postimg.cc/wvD3jYFd/welcome.png") no-repeat center center fixed;
-      background-size: cover;
-      filter: blur(20px); /* Adjust the blur intensity as needed */
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+    h1, h2 {
+      margin-top: 50px;
+      font-size: 48px;
+      transition: transform 0.3s ease-in-out;
     }
-
     h2 {
       font-size: 18px;
       font-weight: lighter;
       text-transform: lowercase;
       margin-top: 5px;
     }
-
+    h1:hover, h2:hover {
+      transform: scale(1.1);
+    }
     button-container {
       display: flex;
       flex-wrap: wrap;
@@ -90,23 +70,29 @@
       gap: 10px;
       margin-top: 20px;
     }
-
+    
+    button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
     button {
       transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
       border: 2px solid #000;
       border-radius: 10px;
       background-color: #ff79c6;
-      color: #282a36;
+      color: #282a36; 
       padding: 10px 20px;
       cursor: pointer;
     }
-
     button:hover {
       transform: scale(1.1);
       background-color: #bd93f9;
       box-shadow: 0 0 12px #ff78c6;
     }
-
+    
     footer {
       margin-top: auto;
       text-align: center;
@@ -120,6 +106,36 @@
 </head>
 <body>
 
+  <style>
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+  
+    .logo-container img {
+      width: 120px;
+      height: auto;
+    }
+  
+    .nav-links {
+      display: flex;
+      margin-left: 20px;
+    }
+  
+    .nav-links a {
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+      color: #0077b6;
+    }
+  </style>
+  
   <nav>
     <div class="logo-container">
       <img src="https://i.ibb.co/g7By4YD/aydenssite.png" alt="Ayden's Site Logo">
@@ -131,11 +147,10 @@
     </div>
   </nav>
 
-  <div class="welcome-image">
-    <h2>this is a fun website by Ayden</h2>
-  </div>
+  <h1>Welcome!</h1>
+  <h2>this is a fun website by Ayden</h2>
 
-  <div class="button-container">
+  <button-container>
    <button onclick="window.location.href='pizzatower'">Pizza Tower</button>
    <button onclick="window.location.href='tombofthemask'">Tomb of the Mask</button>
    <button onclick="window.location.href='1v1lol'">1v1.lol</button>
@@ -153,7 +168,7 @@
    <button onclick="window.location.href='logan'">Logan's Rizz 😍💀</button>
    <button onclick="window.location.href='volleyrandom'">Volley Random</button>
    <button onclick="window.location.href='boxingrandom'">Boxing Random</button>
-  </div>
+  </button-container>
 
   <footer>Website is a work in progress. Bugs may occur, and more games will be added soon.</footer>
 
