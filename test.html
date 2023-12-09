@@ -61,10 +61,17 @@
       background-color: #bd93f9;
     }
 
-    h1, h2 {
-      margin-top: 50px;
-      font-size: 48px;
-      transition: transform 0.3s ease-in-out;
+    .welcome-image {
+      background: url("https://i.postimg.cc/wvD3jYFd/welcome.png") no-repeat center center fixed;
+      background-size: cover;
+      filter: blur(20px); /* Adjust the blur intensity as needed */
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
     h2 {
@@ -72,10 +79,6 @@
       font-weight: lighter;
       text-transform: lowercase;
       margin-top: 5px;
-    }
-
-    h1:hover, h2:hover {
-      transform: scale(1.1);
     }
 
     button-container {
@@ -126,8 +129,9 @@
     </div>
   </nav>
 
-  <h1>Welcome!</h1>
-  <h2>this is a fun website by Ayden</h2>
+  <div class="welcome-image">
+    <h2>this is a fun website by Ayden</h2>
+  </div>
 
   <div class="button-container">
    <button onclick="window.location.href='pizzatower'">Pizza Tower</button>
