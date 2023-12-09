@@ -1,112 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4c4.png" type="image/png">
-  <title>Ayden's Site</title>
+  <title>Ayden's Gaming Site</title>
+
+  <!-- Add favicon  -->
+  <link rel="icon" href="game-controller.png">
+
+  <!-- Use Google Fonts for improved typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Add some CSS resets -->
   <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+    * {
       margin: 0;
-      background: url("https://mcdn.wallpapersafari.com/medium/10/37/Aim58J.jpg") no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.7);
-      width: 100%;
-      padding: 10px 0;
+      padding: 0;
       box-sizing: border-box;
     }
-    nav a {
-      text-decoration: none;
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
       color: #fff;
-      margin: 0 20px;
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 18px;
-      text-shadow: 2px 2px 4px #000;
+      background: #1a1a1a url('game-bg.png');
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    h1 {
-      margin-top: 50px;
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 48px;
-      text-shadow: 2px 2px 4px #000;
-    }
-    h2 {
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 18px;
-      font-weight: lighter;
-      text-transform: lowercase;
-      text-shadow: 2px 2px 4px #000;
-      margin-top: 5px;
-    }
-    button-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 20px;
-    }
-    button {
-      transition: transform 0.3s ease-in-out;
-      border: 2px solid #000;
-      border-radius: 10px;
-      background-color: #FFFF00;
-      color: #000;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-    button:hover {
-      transform: scale(1.1);
-    }
-    footer {
-      margin-top: auto;
-      text-align: center;
-      padding: 10px;
-      font-family: 'Comic Sans MS', cursive;
-      font-size: 18px;
-      text-shadow: 2px 2px 4px #000;
-      background-color: rgba(0, 0, 0, 0.7);
-      width: 100%;
-      box-sizing: border-box;
+
+    .container {
+      max-width: 1110px;
+      margin: 0 auto;
+      padding: 0 30px;
     }
   </style>
+
 </head>
+
 <body>
 
-  <nav>
-    <a href="https://aydens-site.github.io">Home</a>
-    <a href="support">Support</a>
-    <a href="contact">Contact</a>
-  </nav>
+  <!-- Main header  -->
+  <header>
+    <div class="container">
 
-  <h1>Ayden's Site</h1>
-  <h2>a fun website by Ayden</h2>
+      <!-- Logo  -->
+      <a href="/">
+        <h1>GameZone</h1>
+      </a>
 
-  <button-container>
-    <button onclick="window.location.href='pizzatower'">Pizza Tower</button>
-    <button onclick="window.location.href='tombofthemask'">Tomb of the Mask</button>
-    <button onclick="window.location.href='1v1lol'">1v1.lol</button>
-    <button onclick="window.location.href='ovo'">OvO</button>
-    <button onclick="window.location.href='pixelshooter'">Pixel Shooter</button>
-    <button onclick="window.location.href='basketrandom'">Basket Random</button>
-    <button onclick="window.location.href='slope'">Slope</button>
-    <button onclick="window.location.href='basketballstars'">Basketball Stars</button>
-    <button onclick="window.location.href='fnaf'">Five Nights at Freddy's</button>
-    <button onclick="window.location.href='motox3m'">Moto X3M</button>
-    <button onclick="window.location.href='fireboyandwatergirl'">Fireboy and Watergirl</button>
-    <button onclick="window.location.href='run3'">Run 3</button>
-  </button-container>
+      <!-- Main navigation -->
+      <nav>
+        <a href="/">Home</a>
+        <a href="/games">Games</a>
+        <a href="/contact">Contact</a>
+      </nav>
 
-  <footer>Website is a work in progress. Bugs may occur, and more games will be added soon.</footer>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="container">
+
+      <div class="hero-text">
+        <h2>Welcome to GameZone</h2>
+        <p>Your #1 spot for the best online games!</p>
+      </div>
+
+      <img src="hero-graphic.svg" class="hero-img">
+
+    </div>
+  </section>
+
+  <section class="games">
+    <div class="container">
+
+      <!-- Game categories -->
+      <ul class="categories">
+        <li><a href="/action">Action</a></li>
+        <li><a href="/adventure">Adventure</a></li> 
+        <li><a href="/puzzle">Puzzle</a></li>
+        <li><a href="/sports">Sports</a></li>  
+      </ul>
+
+      <!-- List of games (just an example!) -->
+      <div class="games-list">
+        
+        <div class="game-card">
+          <img src="game-1.jpg">
+          <h3>Game 1</h3>
+        </div>
+
+        <div class="game-card">
+          <img src="game-2.jpg">
+          <h3>Game 2</h3> 
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p class="copyright">Copyright GameZone 2023</p>
+  </footer>
 
 </body>
 </html>
