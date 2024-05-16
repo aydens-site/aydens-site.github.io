@@ -27,6 +27,20 @@
                 background-position: 100% 50%;
             }
         }
+
+        .loading-spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid white;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
         
         #header {
             position: relative;
@@ -38,9 +52,17 @@
             border-radius: 50%;
             margin-bottom: 20px;
         }
+        #header h1 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
         .button {
             display: inline-block;
             margin: 0 20px;
+            transition: transform 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.1);
         }
         .button img {
             width: 80px;
@@ -51,11 +73,13 @@
 <body>
     <div id="header">
         <img src="https://cdn.pfps.gg/pfps/5088-cat-money.png" alt="Profile Picture">
+        <h1>ayden on top</h1>
         <div>
-            <a href="YOUR_DISCORD_LINK" class="button"><img src="https://static.vecteezy.com/system/resources/previews/018/930/718/original/discord-logo-discord-icon-transparent-free-png.png" alt="Discord Icon"></a>
-            <a href="YOUR_ROBLOX_LINK" class="button"><img src="https://paird.ai/img/logo-robo.1d72e773.png" alt="Roblox Icon"></a>
+            <a href="https://discord.gg/Mw9ueNTAMZ" class="button"><img src="https://static.vecteezy.com/system/resources/previews/018/930/718/original/discord-logo-discord-icon-transparent-free-png.png" alt="Discord Icon"></a>
+            <a href="https://www.roblox.com/users/449261717/profile" class="button"><img src="https://paird.ai/img/logo-robo.1d72e773.png" alt="Roblox Icon"></a>
         </div>
     </div>
+    <div class="loading-spinner"></div>
 </body>
 </html>
 
