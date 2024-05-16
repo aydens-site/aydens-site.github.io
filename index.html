@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>idark is cool</title>
     <link rel="icon" type="image/png" href="https://www.pngmart.com/files/12/Yellow-Laughing-Emoji-PNG-Clipart.png">
-    <meta property="og:title" content="ayden’s site">
-    <meta property="og:description" content="ayden/idark is the skibidi sigma ohio">
+    <meta property="og:title" content="ayden's site">
+    <meta property="og:description" content="idark is the skibidi alpha">
     <meta property="og:image" content="https://cdn.pfps.gg/pfps/5088-cat-money.png">
     <meta property="og:url" content="https://aydensite.com/">
     <style>
@@ -57,8 +57,6 @@
     </style>
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <div class="container">
         <div id="header">
             <img src="https://cdn.pfps.gg/pfps/5088-cat-money.png" alt="Profile Picture">
@@ -72,17 +70,16 @@
 
     <script>
         var setVanta = () => {
-            if (window.VANTA) window.VANTA.GLOBE({
+            if (window.VANTA) window.VANTA.FOG({
                 el: "body",
                 mouseControls: true,
                 touchControls: true,
                 gyroControls: false,
                 minHeight: 200.00,
                 minWidth: 200.00,
-                scale: 1.00,
-                scaleMobile: 1.00,
-                color: 0xff0000,
-                backgroundColor: 0x0
+                highlightColor: 0x0,
+                lowlightColor: 0xff0000,
+                baseColor: 0x0
             });
         };
         setVanta();
