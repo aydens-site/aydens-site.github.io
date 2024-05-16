@@ -4,30 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>idark is cool</title>
+    <link rel="icon" type="image/png" href="https://www.pngmart.com/files/12/Yellow-Laughing-Emoji-PNG-Clipart.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: linear-gradient(to bottom right, #333333, #000000);
             color: white;
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            animation: gradient 10s infinite alternate;
         }
 
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            100% {
-                background-position: 100% 50%;
-            }
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
         }
-        
+
         #header {
             position: relative;
             padding-top: 50px;
@@ -57,14 +55,38 @@
     </style>
 </head>
 <body>
-    <div id="header">
-        <img src="https://cdn.pfps.gg/pfps/5088-cat-money.png" alt="Profile Picture">
-        <h1>ayden on top</h1>
-        <div>
-            <a href="https://discord.gg/Mw9ueNTAMZ" class="button"><img src="https://static.vecteezy.com/system/resources/previews/018/930/718/original/discord-logo-discord-icon-transparent-free-png.png" alt="Discord Icon"></a>
-            <a href="https://www.roblox.com/users/449261717/profile" class="button"><img src="https://paird.ai/img/logo-robo.1d72e773.png" alt="Roblox Icon"></a>
+    <audio autoplay loop>
+        <source src="https://github.com/ayden-site/music/raw/main/Marconi%20Union%20%20Weightless%20Official%20Video.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <div id="header">
+            <img src="https://cdn.pfps.gg/pfps/5088-cat-money.png" alt="Profile Picture">
+            <h1>ayden on top</h1>
+            <div>
+                <a href="https://discord.gg/Mw9ueNTAMZ" class="button"><img src="https://static.vecteezy.com/system/resources/previews/018/930/718/original/discord-logo-discord-icon-transparent-free-png.png" alt="Discord Icon"></a>
+                <a href="https://www.roblox.com/users/449261717/profile" class="button"><img src="https://paird.ai/img/logo-robo.1d72e773.png" alt="Roblox Icon"></a>
+            </div>
         </div>
     </div>
+
+    <script>
+        var setVanta = () => {
+            if (window.VANTA) window.VANTA.FOG({
+                el: "body",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                highlightColor: 0x0,
+                lowlightColor: 0xff0000,
+                baseColor: 0x0
+            });
+        };
+        setVanta();
+    </script>
 </body>
 </html>
 
